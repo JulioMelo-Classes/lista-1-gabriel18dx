@@ -4,6 +4,7 @@ project ( Intervalos VERSION 1.0 LANGUAGES CXX )
 #=== App target ===
 set( APP_NAME "program" )
 add_executable( ${APP_NAME} src/main.cpp)
+target_sources( ${APP_NAME} PRIVATE "src/function.cpp" )
 set_target_properties( ${APP_NAME} PROPERTIES CXX_STANDARD 11 )
 
 #=== Testing by comparing OUTPUTs
