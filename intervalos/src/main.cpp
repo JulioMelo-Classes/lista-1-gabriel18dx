@@ -10,12 +10,13 @@ using std::cin;
 using std::endl;
 #include <iomanip>
 using std::setprecision;
+#include "function.h"
 
 // Se desejar, crie funções aqui, antes do main().
 
 int main(void)
 {
-    // TODO: Adicione aqui a sua solução.
+    func();
 
     return 0;
 }
