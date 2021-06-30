@@ -1,4 +1,5 @@
 #include "function.h"
+/*80%*/
 void func()
 {
   int x, i1=0, i2=0, i3=0, i4=0, fora=0;
@@ -27,8 +28,8 @@ void func()
   }
   
   //saida das porcentagens
-  setprecision(4);
-  cout<<(float)100*i1/(i1+i2+i3+i4+fora)<<endl;
+  setprecision(4); //tem que usar dentro do cout
+  cout<<setprecision(4)<<(float)100*i1/(i1+i2+i3+i4+fora)<<endl;
   cout<<(float)100*i2/(i1+i2+i3+i4+fora)<<endl;
   cout<<(float)100*i3/(i1+i2+i3+i4+fora)<<endl;
   cout<<(float)100*i4/(i1+i2+i3+i4+fora)<<endl;
