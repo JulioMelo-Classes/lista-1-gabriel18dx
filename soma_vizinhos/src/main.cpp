@@ -10,7 +10,20 @@ using std::endl;
 
 int main( void )
 {
-    // TODO: Adicione seu código aqui. 
+    int m, n, x;
+
+    cin>>std::ws>>m;
+    cin>>std::ws>>n;
+    x=m;
+    
+    if(n > 0)
+        for(int i=1; i<n; i++)
+            x += m+i;
+    else{
+        for(int i=1; i<n; i++)
+            x += m-i;
+    }
+    cout<<x<<endl;
 
     return 0;
 }
